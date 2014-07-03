@@ -1,0 +1,13 @@
+@import "compass";
+@import 'gumby/css/gumby';
+@import 'gumby/sass/gumby';
+
+
+.alert.active {
+  display: none;
+}
+.alert a {
+  color: #000000;
+}
+
+

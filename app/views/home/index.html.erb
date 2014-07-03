@@ -1,0 +1,28 @@
+
+<% if user_signed_in? %>
+    <% unless @credential %>
+        <div class="centered twelve columns">
+          <h4 class="">You need to insert you Salesforce App credentials in order to create leads.</h4>
+        </div>
+        <br/>
+        <br/>
+        <br/>
+        <div class="centered five columns">
+          <div class="xlarge secondary btn"><%= link_to 'Salesforce App Info', edit_credentials_path %></div>
+        </div>
+    <% else %>
+        <div class="centered four columns">
+          <div class="xlarge secondary btn"><%= link_to 'Create Lead', new_aux_leads_path %></div>
+        </div>
+    <% end %>
+
+<% else %>
+    <div class="centered ten columns">
+      <h1>Welcome to Leadcreator</h1>
+    </div>
+    <div class="centered five columns">
+      <div class="xlarge secondary btn"><%= link_to 'Sign In', new_user_session_path %></div> or
+      <div class="xlarge secondary btn"><%= link_to 'Sign Up', new_user_registration_path %></div>
+    </div>
+
+<% end %>

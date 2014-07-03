@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source source="LOCAL" name="Rails leadcreator: development" uuid="0ad5cdef-5092-47fd-beb8-c5ce15444f42">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails leadcreator: test" uuid="4dc9e30d-b6a1-4add-960c-3db0a674fc1b">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails leadcreator: production" uuid="b7fa40a9-9a68-45bc-af09-7f48d3d2a78f">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+</component>

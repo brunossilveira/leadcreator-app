@@ -1,0 +1,7 @@
+<% if user_signed_in? %>
+    <li><div class="medium default btn"><%= link_to 'Sign out', destroy_user_session_path, :method => 'delete' %></a></div></li>
+<% else %>
+    <li><div class="medium default btn icon-right icon-login"><%= link_to 'Sign in', new_user_session_path %></a></div></li>
+    <li><div class="medium default btn icon-right icon-list-add"><%= link_to 'Sign up', new_user_registration_path %></a></div></li>
+<% end %>
+

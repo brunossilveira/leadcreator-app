@@ -1,0 +1,12 @@
+<h1>New Lead</h1>
+
+<%= simple_form_for(@lead) do |f| %>
+    <div class="field"><%= f.input :name, :label => false, :class => 'input', :placeholder => 'First Name' %></div>
+    <div class="field"><%= f.input :last_name, :label => false, :class => 'input', :placeholder => 'Last Name', :required => true %></div>
+    <div class="field"><%= f.input :email, :label => false, :class => 'input', :placeholder => 'Email' %></div>
+    <div class="field"><%= f.input :company, :label => false, :class => 'input', :placeholder => 'Company', :required => true %></div>
+    <div class="field"><%= f.input :job_title, :label => false, :class => 'input', :placeholder => 'Job Title' %></div>
+    <div class="field"><%= f.input :phone, :label => false, :class => 'input', :placeholder => 'Phone Number' %></div>
+    <div class="field"><%= f.input :website, :label => false, :class => 'input', :placeholder => 'Website' %></div>
+    <div class="success medium btn"><%= f.button :submit %></div>
+<% end %>
