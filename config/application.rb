@@ -22,6 +22,13 @@ module Leadcreator
 
     config.assets.paths <<
         Rails.root.join("vendor","assets","bower_components")
-    config.sass.load_paths << Rails.root.join("vendor","assets","bower_components")
+
+    config.assets.precompile.push(Proc.new do |path|
+      File.extname(path).in? [
+                                 '.html', '.erb', '.haml',                 # Templates
+                                 '.png',  '.gif', '.jpg', '.jpeg', '.svg', # Images
+                                 '.eot',  '.otf', '.svc', '.woff', '.ttf', # Fonts
+                             ]
+    end)
   end
 end
