@@ -60,8 +60,6 @@ class CredentialsController < ApplicationController
     @credential = current_user.credential
     @client = OAuth2::Client.new(@credential.client_id, @credential.client_secret, site: @credential.instance_url,
                                  authorize_url: '/services/oauth2/authorize', token_url: '/services/oauth2/token')
-
-    @client.auth_code.authorize_url(redirect_uri: callback_url)
   end
 
 end
