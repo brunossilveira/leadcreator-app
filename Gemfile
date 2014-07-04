@@ -42,6 +42,13 @@ gem 'modernizr-rails'
 group :development do
   gem 'thin'
   gem 'pry'
+  gem 'rspec-rails'
+end
+group :test do
+  gem 'rspec-rails'
+  gem 'shoulda-matchers'
+  gem 'factory_girl_rails'
+  gem 'faker'
 end
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

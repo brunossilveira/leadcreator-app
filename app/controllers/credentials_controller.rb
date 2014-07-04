@@ -17,6 +17,7 @@ class CredentialsController < ApplicationController
       @credential.save!
       redirect_to authorize_path
     else
+      flash[:error] = 'Validation error.'
       render :edit
     end
   end
@@ -29,6 +30,7 @@ class CredentialsController < ApplicationController
       @credential.save!
       redirect_to authorize_path
     else
+      flash[:error] = 'Validation error.'
       render :edit
     end
   end
